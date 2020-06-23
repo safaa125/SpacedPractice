@@ -1,4 +1,6 @@
 import time
+print("looks like once a branch is merged on server, it remains locally")
+print("Is it best practice to delete branches locally after they're merged on server?")
 #Introduction
 class intro():
     def mainIntro():
