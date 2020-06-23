@@ -42,4 +42,14 @@ class ecoQuestions():
             print("Incorrect, it is part of Dalio's long term cycle; the predecessor of a depression.")
         else: 
             print("Invalid choice, your answer was defaulted to 'incorrect'.")
+        ecoQuestions.questionThree()
+
+    def questionThree():
+        qThree = str(input("True or False: Credit can be generated without production?\n>>"))
+        if qThree == "True".lower():
+            print("Correct, next question...")
+            score =+ 1 
+        elif qThree ==  "False".lower():
+            print("Incorrect; if anything, if you have a lot of production, you're entitled to more credit by nature of your income.")
+
 #print("your score is: ", score) will not be shown outside of a class

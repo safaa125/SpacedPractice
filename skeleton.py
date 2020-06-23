@@ -1,21 +1,22 @@
 import time
-print("looks like once a branch is merged on server, it remains locally")
-print("Is it best practice to delete branches locally after they're merged on server?")
+import economics
+
 #Introduction
 class intro():
     def mainIntro():
         print("Welcome to the quiz!\nThere are three topics choose from.")
         global choice
-        choice = input("\nCrypto, Economics or St John?\n>")
+        choice = input("\nCrypto, Economics or St John?\n>>")
         intro.selection()
 #Choice of Topics
     def selection():
-        if choice == "Crypto":
-            print("Chosen Crypto")
-        elif choice == "Economics":
-            print("Chosen Economics")
-        elif choice == "St John":
-            print("Chosen Medic")
+        if choice == "Crypto".lower():
+            print("Chosen Crypto\n")
+        elif choice == "Economics".lower():
+            print("Chosen Economics\n")
+            economics.ecoQuestions.questionOne()
+        elif choice == "St John".lower():
+            print("Chosen Medic\n")
         else:
             print("That is not a valid choice, try again\n\n")
             intro.mainIntro()
