@@ -1,7 +1,7 @@
 from textwrap import dedent
 print("hello there, made a change")
 print("Will it commit?")
-
+print("Merged success, how bout now when the branch does not exist on server?")
 class ecoQuestions():
     global score
     score = 0
